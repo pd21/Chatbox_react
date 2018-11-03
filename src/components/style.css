@@ -1,0 +1,37 @@
+
+.message-list{
+  height:90vh;
+  border-bottom: 2px dotted black;
+}
+
+.newRoomForm{
+  position: absolute;
+  left:2px;
+  bottom: 5px;
+  border: 1px solid blue;
+  padding: 40px;
+}
+
+.roomList{
+  width:200px;
+  background-color:#d5b8ff;
+  height:100vh;
+  float:left;
+  position: relative;
+}
+
+.sendMessageForm{
+
+}
+
+.messageText{
+  background:#d5b8ff;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 25vw;
+  margin-left: 250px;
+  height:8vh;
+  color: #fff;
+  font-style: italic;
+  font-family:Monotype Corsiva;
+}
