@@ -13,7 +13,7 @@
 }
 
 .roomList{
-  width:200px;
+  width:300px;
   background-color:#d5b8ff;
   height:100vh;
   float:left;
@@ -29,9 +29,13 @@
   font-size: 25px;
   border-radius: 5px;
   width: 25vw;
-  margin-left: 250px;
+  margin-left: 350px;
   height:8vh;
   color: #fff;
   font-style: italic;
   font-family:Monotype Corsiva;
+}
+.roomactive
+{
+  color : #fff;
 }
