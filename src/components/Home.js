@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+import './home.css';
 import MainChatRoom from './MainChatRoom'
 import RoomList from './RoomList'
 import MessageList from './MessageList'
 import SendMessageForm from './SendMessageForm'
 import NewRoomForm from './NewRoomForm'
 import { tokenUrl, instanceLocator} from '../config'
+
 
 
 class Home extends Component {
@@ -44,12 +45,13 @@ class Home extends Component {
       }else{
         return (
           <form onSubmit={this.handleSubmit}>
-            <h4>Enter Username</h4>
+            <h4 className="user">Select your Avatar</h4>
             <select onChange = {this.handleChange}>
               <option value="">Select User</option>
               <option value="priyanka">Priyanka</option>
               <option value="swagnik">Swagnik</option>
             </select>
+            <br />
             <br />
             <button type="submit">Enter Chat</button>
           </form>

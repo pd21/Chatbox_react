@@ -35,7 +35,7 @@ class MainChatRoom extends Component {
     })
     chatManager.connect()
       .then(currentUser => {
-        console.log(JSON.stringify(currentUser));
+        console.log(JSON.stringify(currentUser))
         this.currentUser = currentUser
         this.getRooms()
 
@@ -103,8 +103,8 @@ class MainChatRoom extends Component {
         subscribeToRoom={this.subscribeToRoom}
         rooms={[...this.state.joinableRooms,...this.state.joinedRooms]}/>
         <MessageList  messages={this.state.messages }/>
-        <SendMessageForm sendMessage={this.sendMessage}/>
         <NewRoomForm createRoom={this.createRoom}/>
+        <SendMessageForm sendMessage={this.sendMessage}/>
       </div>
     );
   }

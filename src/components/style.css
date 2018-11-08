@@ -1,41 +1,67 @@
 
-.message-list{
-  height:90vh;
-  border-bottom: 2px dotted black;
+body{
+  background: #fff;
 }
-
-.newRoomForm{
-  position: absolute;
-  left:2px;
-  bottom: 5px;
-  border: 1px solid blue;
-  padding: 40px;
-}
-
 .roomList{
-  width:300px;
-  background-color:#d5b8ff;
-  height:100vh;
-  float:left;
-  position: relative;
-}
-
-.sendMessageForm{
-
-}
-
-.messageText{
-  background:#d5b8ff;
-  font-size: 25px;
-  border-radius: 5px;
-  width: 25vw;
-  margin-left: 350px;
-  height:8vh;
+  width: 30vw;
+  height:80vh;
+  background:rgba(0, 181, 204, 1);
   color: #fff;
-  font-style: italic;
-  font-family:Monotype Corsiva;
+  float: left;
+  box-shadow: 10px 0 5px -2px #888;
+
 }
-.roomactive
-{
-  color : #fff;
+.message-list{
+  height: 80vh;
+  width:70vw;
+  overflow-y: auto;
+}
+.newRoomForm{
+  width:30vw;
+  float: left;
+  background: #fff;
+}
+input[type=text] {
+   background: rgba(218, 223, 225, 1);
+   margin: 10px;
+   border: none;
+   padding: 10px;
+   font-family:monospace;
+   font-size: 14px;
+ }
+input[type=text]:hover {
+   background: #fff;
+   border:1px solid #00b5cc;
+}
+button{
+  padding: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.message{
+  margin-left: 50px;
+ margin-top: 15px;
+}
+.messageUserName{
+  display: inline;
+  font-weight: bold;
+  font-family:monospace;
+  text-transform: capitalize;
+  font-size: 17px;
+
+}
+ul {
+  list-style-type: none;
+}
+.messageText{
+  display: inline;
+  color: #00b5cc;
+  border-radius: 2px;
+}
+.sendMessageForm{
+  margin-left: 450px;
+  margin-top: 10px;
+}
+#new_message{
+  width: 500px;
 }
